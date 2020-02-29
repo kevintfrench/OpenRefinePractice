@@ -1,0 +1,2616 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Column 1",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Column 1 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Column 2",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Column 2 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Column 3",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Column 3 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Column 4",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Column 4 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Column 5",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Column 5 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Column 6",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Column 6 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Column 7",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Column 7 using expression value.trim()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column 8",
+    "description": "Remove column Column 8"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column 9",
+    "description": "Remove column Column 9"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Column 1",
+    "newColumnName": "Newspaper",
+    "description": "Rename column Column 1 to Newspaper"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Column 2",
+    "newColumnName": "PublicationDate",
+    "description": "Rename column Column 2 to PublicationDate"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Column 3",
+    "newColumnName": "ArticleTitle",
+    "description": "Rename column Column 3 to ArticleTitle"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column 4",
+    "description": "Remove column Column 4"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Column 5",
+    "newColumnName": "ArticleContent",
+    "description": "Rename column Column 5 to ArticleContent"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Column 6",
+    "newColumnName": "Section",
+    "description": "Rename column Column 6 to Section"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Column 7",
+    "newColumnName": "ArticleDate",
+    "description": "Rename column Column 7 to ArticleDate"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ArticleDate",
+    "expression": "value.replace(\" \",\"-\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ArticleDate using expression value.replace(\" \",\"-\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ArticleDate",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ArticleDate using expression value.toUppercase()"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ArticleDate",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "-",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column ArticleDate by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ArticleDate 3",
+    "expression": "value.replace(/\\b1\\b/,\"2001\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ArticleDate 3 using expression value.replace(/\\b1\\b/,\"2001\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ArticleDate 1",
+    "expression": "join ([coalesce(cells['ArticleDate 2'].value,''),coalesce(cells['ArticleDate 1'].value,''),coalesce(cells['ArticleDate 3'].value,'')],'/')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ArticleDate 1 using expression join ([coalesce(cells['ArticleDate 2'].value,''),coalesce(cells['ArticleDate 1'].value,''),coalesce(cells['ArticleDate 3'].value,'')],'/')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ArticleDate 1",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ArticleDate 1 using expression value.toDate()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ArticleDate 2",
+    "description": "Remove column ArticleDate 2"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ArticleDate 3",
+    "description": "Remove column ArticleDate 3"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PublicationDate",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " ",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column PublicationDate by separator"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PublicationDate 4",
+    "description": "Remove column PublicationDate 4"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PublicationDate 5",
+    "description": "Remove column PublicationDate 5"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PublicationDate 6",
+    "description": "Remove column PublicationDate 6"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PublicationDate 7",
+    "description": "Remove column PublicationDate 7"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PublicationDate 8",
+    "description": "Remove column PublicationDate 8"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PublicationDate 9",
+    "description": "Remove column PublicationDate 9"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PublicationDate 10",
+    "description": "Remove column PublicationDate 10"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PublicationDate 11",
+    "description": "Remove column PublicationDate 11"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PublicationDate 12",
+    "description": "Remove column PublicationDate 12"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PublicationDate 13",
+    "description": "Remove column PublicationDate 13"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ArticleDate 4",
+    "description": "Remove column ArticleDate 4"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ArticleDate 5",
+    "description": "Remove column ArticleDate 5"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ArticleDate 6",
+    "description": "Remove column ArticleDate 6"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ArticleDate 7",
+    "description": "Remove column ArticleDate 7"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PublicationDate 1",
+    "expression": "join ([coalesce(cells['PublicationDate 2'].value,''),coalesce(cells['PublicationDate 3'].value,''),coalesce(cells['PublicationDate 1'].value,'')],'-')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column PublicationDate 1 using expression join ([coalesce(cells['PublicationDate 2'].value,''),coalesce(cells['PublicationDate 3'].value,''),coalesce(cells['PublicationDate 1'].value,'')],'-')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PublicationDate 1",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column PublicationDate 1 using expression value.toDate()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PublicationDate 2",
+    "description": "Remove column PublicationDate 2"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PublicationDate 3",
+    "description": "Remove column PublicationDate 3"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://tools.wmflabs.org/openrefine-wikidata/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q11032",
+        "name": "newspaper"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column Newspaper to type Q11032"
+  },
+  {
+    "op": "core/row-star",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "(blank)",
+                "l": "(blank)"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "starred": true,
+    "description": "Star rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "(blank)",
+                "l": "(blank)"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Union Leader øCøCøCøCøCøCø\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://tools.wmflabs.org/openrefine-wikidata/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q11032",
+        "name": "newspaper"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column Newspaper to type Q11032"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Union Leader [C[\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value.replace(\"Union LeaderøøCøCøCøCøCøCøCø\",\"New Hampshire Union Leader\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Newspaper using expression value.replace(\"Union LeaderøøCøCøCøCøCøCøCø\",\"New Hampshire Union Leader\")"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Newspaper: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://tools.wmflabs.org/openrefine-wikidata/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q11032",
+        "name": "newspaper"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column Newspaper to type Q11032"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Newspaper: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value.replace(\"Union Leder\",\"New Hampshire Union Leader\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Newspaper using expression value.replace(\"Union Leder\",\"New Hampshire Union Leader\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Newspaper: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value.replace(\"Union Ledr\",\"New Hampshire Union Leader\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Newspaper using expression value.replace(\"Union Ledr\",\"New Hampshire Union Leader\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Newspaper: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value.replace(\"Union Leadr\",\"New Hampshire Union Leader\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Newspaper using expression value.replace(\"Union Leadr\",\"New Hampshire Union Leader\")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Newspaper: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "[DUnion Leader\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Newspaper: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Union Leqader\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Newspaper: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "UnionLeader\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Newspaper: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "`\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Newspaper: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "\\\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Newspaper: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "similarValue": "New Hampshire Union Leader",
+    "judgment": "matched",
+    "match": {
+      "id": "Q7008331",
+      "name": "New Hampshire Union Leader",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item New Hampshire Union Leader (Q7008331) for cells containing \"New Hampshire Union Leader\" in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Newspaper: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "United Leader\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Newspaper: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://tools.wmflabs.org/openrefine-wikidata/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q11032",
+        "name": "newspaper"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column Newspaper to type Q11032"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Newspaper",
+          "columnName": "Newspaper",
+          "query": "New Hampshire Sunday News",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value.replace(\"New Hampshire Sunday News\",\"New Hampshire Union Leader\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Newspaper using expression value.replace(\"New Hampshire Sunday News\",\"New Hampshire Union Leader\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Newspaper",
+          "columnName": "Newspaper",
+          "query": "New Hampshire Sunday News",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value.replace(/New Hampshire sunday News/i,\"New Hampshire Union Leader\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Newspaper using expression value.replace(/New Hampshire sunday News/i,\"New Hampshire Union Leader\")"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Newspaper",
+          "columnName": "Newspaper",
+          "query": "New Hampshire Sunday News",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://tools.wmflabs.org/openrefine-wikidata/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q11032",
+        "name": "newspaper"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column Newspaper to type Q11032"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "(Photos)\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Union Leader\u001b[B\u001b[B\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Union Leader.\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Union Leader \\\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Union Leader\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Union leader\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "UNION LEADER\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Union Leadeeø2r\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Union Leadear\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Union edition\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Union\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Uniion Leader\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Under Leader\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Un ion Leader\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Un\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Umion Leader\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Uion Leader\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "The Union Leader`\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "The Union Leader[C[C[C[C[C[C\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "The Union Leader\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "New Hampsire Sunday News\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "New Hampshire Sundayy News\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "New Hampshire Union Leader"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "New Hampshire Union Leader\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "øDøDøDøDøDøDøDøDøD Union Leader\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "THE CABINET\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The Cabinet"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "The Cabinet\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The Cabinet"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "THE AMHERST CITIZEN\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The Amherst Citizen"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "The Amherst Citizen\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The Amherst Citizen"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Salem Observer\u001e",
+          "Salem Observer`\u001e",
+          "Salem Observer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Salem Observer"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Salem Obsever\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Salem Observer"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper",
+          "expression": "value",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "salem\u001e",
+                "l": "salem\u001e"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Salem-Observer\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Salem Observer"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "nion Leader\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "OEagle-Tribune\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The Eagle-Tribune "
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper",
+          "expression": "value",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "cease-and-desist the use of illegal politcal advertising. The group ran an ad before the election regarding the candidate for selectman, Jim Holland.\u001e",
+                "l": "cease-and-desist the use of illegal politcal advertising. The group ran an ad before the election regarding the candidate for selectman, Jim Holland.\u001e"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper",
+          "expression": "value",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "complex with natural areas surrounding a community center.",
+                "l": "complex with natural areas surrounding a community center."
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper",
+          "expression": "value",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "defeating new school funding proposal.\u001e",
+                "l": "defeating new school funding proposal.\u001e"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper",
+          "expression": "value",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Donors are being sought from businesses and the community at large.\u001e",
+                "l": "Donors are being sought from businesses and the community at large.\u001e"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper",
+          "expression": "value",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "for families needing a safe place to meet.\u001e",
+                "l": "for families needing a safe place to meet.\u001e"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper",
+          "expression": "value",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "from living in the town they grew up in.\u001e",
+                "l": "from living in the town they grew up in.\u001e"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper",
+          "expression": "value",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "funding.\u001e",
+                "l": "funding.\u001e"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper",
+          "expression": "value",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "memorabilia.",
+                "l": "memorabilia."
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "O4 DEC 2001\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper",
+          "expression": "value",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "pizza closed the Kelley Library Summer Reading Program. Children's Librarian Sheila Murray is retiring and this was her last summer program.\u001e",
+                "l": "pizza closed the Kelley Library Summer Reading Program. Children's Librarian Sheila Murray is retiring and this was her last summer program.\u001e"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Reed, Bernice P.\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper",
+          "expression": "value",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Remaining articles to be voted on.\u001e",
+                "l": "Remaining articles to be voted on.\u001e"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "s\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Salem Observer"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper",
+          "expression": "value",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Simmons, Philip E.\u001e",
+                "l": "Simmons, Philip E.\u001e"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper",
+          "expression": "value",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "techniques to use when lost in the woods to children at the Salem Boys and Girls Club.\u001e",
+                "l": "techniques to use when lost in the woods to children at the Salem Boys and Girls Club.\u001e"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Newspaper",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Trailer park cats are under siege\u001e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Hampshire Union Leader"
+      }
+    ],
+    "description": "Mass edit cells in column Newspaper"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper",
+          "expression": "value",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Salem Selectmen\u001e",
+                "l": "Salem Selectmen\u001e"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper",
+          "expression": "value",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Sponsers of the event were Partners In Health and Merrimack Valley Nostars.\u001e",
+                "l": "Sponsers of the event were Partners In Health and Merrimack Valley Nostars.\u001e"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper",
+          "expression": "value",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Spokesman Review\u001e",
+                "l": "Spokesman Review\u001e"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Newspaper",
+          "expression": "value",
+          "columnName": "Newspaper",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Sinclair, Avis ( Foss)\u001e",
+                "l": "Sinclair, Avis ( Foss)\u001e"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  }
+]
